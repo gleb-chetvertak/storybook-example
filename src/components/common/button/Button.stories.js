@@ -57,6 +57,10 @@ export default {
         ArrowSmRightIcon,
       },
     },
+
+    click: {
+      action: 'click',
+    },
   },
   args: {
     classes: '',
@@ -79,7 +83,7 @@ const Template = (args) => ({
   components: { AppButton, XIcon, ArrowSmRightIcon },
   data: () => ({ args }),
   template: `
-    <AppButton v-bind="args">
+    <AppButton v-bind="args" @click="args.click">
       <component
         v-if="args.slotDefaultTemplate === 'icon-text' && args.slotDefaultIcon"
         :is="args.slotDefaultIcon"

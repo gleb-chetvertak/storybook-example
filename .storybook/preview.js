@@ -14,6 +14,8 @@ export const parameters = {
     storySort: {
       method: 'alphabetical',
     },
+    showPanel: true,
+    panelPosition: 'bottom',
   },
   backgrounds: {
     values: [
